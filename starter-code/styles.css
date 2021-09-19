@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Red Hat Display', sans-serif;
+    overflow: hidden;
+   
+}
+
+.conteiner {
+    height: 100%;
+    width: 100%;
+    background-color: #F2F2F2;
+    position: relative;
+    display: flex;
+    /*posto cemo sve divove da centriramo na sredini stranice*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.meet {
+position: absolute;
+height: 28px;
+top: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.meet div{
+    color: #28283D;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 44px;
+    margin-left:11px;
+}
+
+
+img{
+    width: 110px;
+    border-radius: 50%;
+    position: absolute;
+    
+   
+}
+.left-up-image{
+left: 110px;
+top: 169px;
+/* position: absolute; */
+}
+
+.left-middle-image{
+    /* position: absolute; */
+    left: -32px;
+top: 224px;
+
+}
+.left-middle-right{
+    left: 252px;
+top: 224px;
+
+}
+.left-center {
+    left: 110px;
+top: 307px;
+
+}
+.left-left-down-image{
+    left: -32px;
+    top: 362px;
+}
+.left-right-down{
+   left: 253px;
+top: 362px;
+}
+
+.right-left-up-image{
+    left: 1026px;
+top: 224px;
+}
+.right-right-up-image{
+    left: 1300px;
+top: 224px;
+
+}
+.right-middle-image{
+    left: 1158px;
+top: 279px;
+}
+
+.right-left-down-image{
+    left: 1016px;
+top: 362px;
+}
+.right-right-down-image{
+    left: 1300px;
+top: 362px;
+}
+
+.right-middle-down-image{
+    left: 1158px;
+top: 417px;
+}
