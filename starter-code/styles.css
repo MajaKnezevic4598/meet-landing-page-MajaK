@@ -5,7 +5,7 @@ body {
     height: 100vh;
     width: 100vw;
     font-family: 'Red Hat Display', sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
    
 }
 
@@ -18,18 +18,22 @@ h1{
 h2{
     font-size: 40px;
     line-height: 44px;
+    font-weight: 900;
+    margin: 0;
+    text-align: center;
 }
 
 .conteiner {
     height: 100%;
     width: 100%;
-    background-color: #F2F2F2;
+    background-color:  #F2F2F2;
     position: relative;
     display: flex;
     /*posto cemo sve divove da centriramo na sredini stranice*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     
 
 }
@@ -53,7 +57,7 @@ justify-content: center;
 }
 
 /*sve slike cu podici za 50px*/
-img{
+.conteiner img{
     width: 110px;
     border-radius: 50%;
     position: absolute;
@@ -124,7 +128,7 @@ position: absolute;
 width: 540px;
 height: 304px;
 /* left: 450px; uklonili smo zbog flexa koji sve centrira po sredini*/
-top: 160px;
+top: 150px;
 /* background-color: #28283D; */
 display: flex;
 flex-direction: column;
@@ -144,6 +148,8 @@ justify-content: flex-start;
 .description {
     width: 100%;
     text-align: center;
+    color:#87879D;
+    font-size:18px;
     /* border: 1px solid white; */
 }
 .buttons {
@@ -166,7 +172,7 @@ justify-content: flex-start;
     margin-right: 16px;
 }
 .buttons .button-2 {
-    background-image:url('../FigmaImages/button2_default.svg');
+    background-image:url('../FigmaImages/what-is-it_default.svg');
     background-repeat: no-repeat;
     background-size: cover;
     width:139px;
@@ -179,8 +185,167 @@ justify-content: flex-start;
    
 }
 .buttons .button-2:hover{
-    background-image: url('../FigmaImages/button2_hover.svg');
+    background-image: url('../FigmaImages/what-is-it_default\ -\ hover.svg');
+}
+
+.bottom-number {
+height: 160px;
+width: 56px;
+position: absolute;
+top: 490px;
+background-color: #F2F2F2;
+
+
+}
+
+.bottom-number .number-one {
+    background-image: url('../FigmaImages/number_one.jpg');
+    background-repeat: no-repeat;
+    height: 56px;
+    border-radius: 50%;
+    
+}
+.number-line{
+    height: 104px;
+    width: 1px;
+    border-left:1px solid #87879D;;
+    transform: translate(28px,1px);
+    opacity: 30%;
+    background-color: #F2F2F2;
+    
+
+}
+
+/**********second page***********/
+
+.second_page {
+    width: 100%;
+    height: 100%;
+    background-color: #F2F2F2;
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.second_page .header-images {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 28%;
+    /* background-color: yellow; */
+    margin-top:20px;
+}
+
+.second_page .header-images img{
+   /* width: 255px;
+    height: 242px; */
+    /* height: 100%;
+    width: 25%; */
+    background-color: grey;
+    margin-right: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.second_page .header-images img:last-of-type{
+    margin-right: 0;
+}
+
+.text {
+    width: 60%;
+    height: 30%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    margin-top:50px;
+}
+
+.text p:first-child{
+        color:#4D96A9;
+        font-weight: 900;
+        font-size: 16px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin: 0 0 20px 0;
+        }
+
+.text p:last-child{
+        margin: 0;
+        color: #87879D;
+        margin-top: 20px;
+        text-align: center;
+        line-height: 22px;
+    }
+
+.footer{
+        height: 45%;
+        width: 100%; 
+}
+
+div.background {
+height: 100%;
+  background: url('../starter-code/assets/desktop/image-footer.jpg') no-repeat;
+ }
+
+div.transbox {
+    width: 100%;
+    height: 100%;
+    background-color: #4D96A9;
+    opacity: 0.8;
+    color:#F2F2F2;
 }
 
 
+.footer .transbox-content {
+    height: 100%; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+} 
+
+ .footer-button{
+width: 15%;
+height: 20%;
+background-image: url('../FigmaImages/footer_button_default.svg');
+background-repeat: no-repeat;
+background-size: cover;
+   
+}
+
+ .footer-button:hover {
+ background-image: url('../FigmaImages/footer_button_hover.svg');
+  background-size: cover;
+}
+
+.footer .transbox-content p {
+font-size: 18px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+  }
+
+.number-two {
+height: 160px;
+width: 56px;
+
+position: relative;
+bottom:-55px;
+ z-index: 1;
+}
+
+.number-two .two {
+    background-image: url('../FigmaImages/number_two.svg');
+    background-repeat: no-repeat;
+    height: 56px;
+    border-radius: 50%;
+}
 
